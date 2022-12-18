@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./build/output.css" />
     <title>Easybank</title>
   </head>
-  <body class="font-pub">
+  <body class="font-pub bg-[#FAFAFA]">
     <!-- header section -->
 
     <header class="bg-white relative z-50">
@@ -62,7 +62,7 @@
           </div>
           <a
             href="#"
-            class="text-white capitalize hover:opacity-60 transition duration-100 ease-in rounded-full px-6 py-3 bg-gradient-to-l from-lGreen to-bCyan items-baseline hidden lg:block"
+            class="text-white capitalize hover:opacity-60 transition duration-100 ease-in rounded-full px-6 py-3 bg-gradient-to-l from-bCyan to-lGreen items-baseline hidden lg:block"
             >request invite</a
           >
           <!-- burger menu -->
@@ -93,68 +93,74 @@
     </header>
 
     <!-- hero section -->
-    <section class="relative bg-[#FAFAFA] pb-32 py-0 lg:py-10 xl:py-0 lg:pb-0">
-      <div class="flex flex-col lg:flex-row justify-center items-center">
-        <div class="w-full lg:w-1/2 lg:order-2">
-          <!-- mobile hero -->
-          <div>
-            <img
-              src="./images/bg-intro-mobile.svg"
-              alt="bg-intro-mobile"
-              class="w-full lg:hidden"
-              aria-hidden="true"
-            />
-            <img
-              src="./images/image-mockups.png"
-              alt="phone mockup"
-              class="absolute -top-32 mr-auto ml-auto left-0 right-5 lg:hidden"
-              aria-hidden="true"
-            />
+    <section
+      class="relative bg-[#FAFAFA] mt-0 lg:mt-36 pb-32 py-0 lg:py-10 xl:py-0 lg:pb-0"
+    >
+      <div class="px-5 lg:px-0">
+        <div class="flex flex-col lg:flex-row justify-center items-center">
+          <div class="w-full lg:w-1/2 lg:order-2">
+            <!-- mobile hero -->
+            <div class="relative">
+              <img
+                src="./images/bg-intro-mobile.svg"
+                alt="bg-intro-mobile"
+                class="w-full scale-150 lg:hidden"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/image-mockups.png"
+                alt="phone mockup"
+                class="absolute -top-24 mx-auto left-0 right-0 lg:hidden scale-100"
+                aria-hidden="true"
+              />
+            </div>
+            <!-- desktop hero -->
+            <div>
+              <img
+                src="./images/bg-intro-desktop.svg"
+                alt="bg-intro-desktop"
+                class="w-full hidden lg:block ml-48 xl:ml-52 -mt-20 xl:-mt-44 h-full scale-150"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/image-mockups.png"
+                alt="phone mockup"
+                class="hidden lg:block w-[43%] absolute -right-24 -top-40 xl:-top-60 scale-110"
+                aria-hidden="true"
+              />
+            </div>
           </div>
-          <!-- desktop hero -->
-          <div>
-            <img
-              src="./images/bg-intro-desktop.svg"
-              alt="bg-intro-desktop"
-              class="w-full hidden lg:block ml-48 -mt-10 h-full scale-125"
-              aria-hidden="true"
-            />
-            <img
-              src="./images/image-mockups.png"
-              alt="phone mockup"
-              class="hidden lg:block w-[43%] absolute -right-20 -top-28"
-              aria-hidden="true"
-            />
-          </div>
-        </div>
-        <div class="max-w-2xl px-11 mx-auto w-full lg:w-1/2 lg:order-1">
-          <h1
-            class="capitalize text-3xl md:text-5xl xl:text-6xl lg:text-left text-dBlue text-center mb-10"
+          <div
+            class="max-w-xl lg:max-w-lg px-4 mt-10 lg:mt-0 xl:px-0 mx-auto w-full lg:w-1/2 lg:order-1"
           >
-            next generation digital banking
-          </h1>
-          <p
-            class="text-base text-center lg:text-xl lg:text-left text-[#9698a6] mb-10"
-          >
-            take your financial life online. your easybank account will be a
-            one-stop-shop for spending, saving, budgeting, investing, and much
-            more.
-          </p>
-          <div class="flex justify-center lg:justify-start">
-            <a
-              href="#"
-              class="text-white capitalize hover:opacity-60 transition duration-100 ease-in rounded-full px-6 py-3 bg-gradient-to-l from-lGreen to-bCyan items-baseline"
-              >request invite</a
+            <h1
+              class="capitalize text-3xl md:text-5xl xl:text-6xl lg:text-left text-dBlue text-center mb-10"
             >
+              next generation digital banking
+            </h1>
+            <p
+              class="text-base text-center md:text-lg lg:text-xl lg:text-left text-[#9698a6] mb-10"
+            >
+              take your financial life online. your easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <div class="flex justify-center lg:justify-start">
+              <a
+                href="#"
+                class="text-white capitalize hover:opacity-60 transition duration-100 ease-in rounded-full px-6 py-3 bg-gradient-to-l from-bCyan to-lGreen items-baseline"
+                >request invite</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- about section -->
-    <section class="pb-8 pt-14 lg:pt-24 bg-[#F3F4F6]">
+    <section class="pb-8 mt-0 lg:mt-20 pt-14 lg:pt-24 bg-[#F3F4F6]">
       <div class="container mx-auto px-5">
-        <div class="max-w-2xl mx-auto xl:mx-0 w-full px-8">
+        <div class="max-w-2xl mx-auto xl:mx-0 w-full px-4">
           <h1
             class="capitalize text-4xl xl:text-left text-dBlue text-center mb-5"
           >
@@ -278,7 +284,7 @@
                   >by claire robinson</small
                 >
                 <h2
-                  class="mt-3 text-xl md:text-2xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
+                  class="mt-3 text-xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
                 >
                   <a
                     href="#"
@@ -286,9 +292,7 @@
                     >receive money in any currency with no fees</a
                   >
                 </h2>
-                <p
-                  class="text-[#9698a6] text-sm md:text-base capitalize font-medium"
-                >
+                <p class="text-[#9698a6] text-sm capitalize font-medium">
                   the world is getting smaller and we're becoming more mobile.
                   so why should you be forced to only receive money in a single
                   …
@@ -310,7 +314,7 @@
                   >by wilson hutton</small
                 >
                 <h2
-                  class="mt-3 text-xl md:text-2xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
+                  class="mt-3 text-xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
                 >
                   <a
                     href="#"
@@ -318,9 +322,7 @@
                     >treat yourself without worrying about money</a
                   >
                 </h2>
-                <p
-                  class="text-[#9698a6] text-sm md:text-base capitalize font-medium"
-                >
+                <p class="text-[#9698a6] text-sm capitalize font-medium">
                   our simple budgeting feature allows you to separate out your
                   spending and set realistic limits each month. that means you …
                 </p>
@@ -341,7 +343,7 @@
                   >by wilson hutton</small
                 >
                 <h2
-                  class="mt-3 text-xl md:text-2xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
+                  class="mt-3 text-xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
                 >
                   <a
                     href="#"
@@ -349,9 +351,7 @@
                     >take your easybank card wherever you go</a
                   >
                 </h2>
-                <p
-                  class="text-[#9698a6] text-sm md:text-base capitalize font-medium"
-                >
+                <p class="text-[#9698a6] text-sm capitalize font-medium">
                   we want you to enjoy your travels. this is why we don't charge
                   any fees on purchases while you're abroad. we'll even show you
                   …
@@ -373,7 +373,7 @@
                   >by claire robinson</small
                 >
                 <h2
-                  class="mt-3 text-xl md:text-2xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
+                  class="mt-3 text-xl mb-4 capitalize hover:text-lGreen transition duration-150 ease-in"
                 >
                   <a
                     href="#"
@@ -381,9 +381,7 @@
                     >our invite-only beta accounts are now live!</a
                   >
                 </h2>
-                <p
-                  class="text-[#9698a6] text-sm md:text-base capitalize font-medium"
-                >
+                <p class="text-[#9698a6] text-sm capitalize font-medium">
                   after a lot of hard work by the whole team, we're excited to
                   launch our closed beta. It's easy to request an invite through
                   the site ...
@@ -407,6 +405,7 @@
               width="139"
               height="20"
               class="mx-auto mb-5 xl:mb-9"
+              aria-hidden="true"
             >
               <defs>
                 <linearGradient
@@ -442,29 +441,39 @@
             <div>
               <ul class="flex justify-center gap-4">
                 <li>
-                  <i
-                    class="fab fa-facebook-square text-white text-xl hover:text-lGreen transition duration-100 ease-in"
-                  ></i>
+                  <a href="#">
+                    <i
+                      class="fab fa-facebook-square text-white text-xl hover:text-lGreen transition duration-100 ease-in"
+                    ></i
+                  ></a>
                 </li>
                 <li>
-                  <i
-                    class="fab fa-youtube text-white text-xl hover:text-lGreen transition duration-100 ease-in"
-                  ></i>
+                  <a href="#">
+                    <i
+                      class="fab fa-youtube text-white text-xl hover:text-lGreen transition duration-100 ease-in"
+                    ></i
+                  ></a>
                 </li>
                 <li>
-                  <i
-                    class="fab fa-twitter text-white text-xl hover:text-lGreen transition duration-100 ease-in"
-                  ></i>
+                  <a href="#">
+                    <i
+                      class="fab fa-twitter text-white text-xl hover:text-lGreen transition duration-100 ease-in"
+                    ></i
+                  ></a>
                 </li>
                 <li>
-                  <i
-                    class="fab fa-pinterest text-white text-xl hover:text-lGreen transition duration-100 ease-in"
-                  ></i>
+                  <a href="#">
+                    <i
+                      class="fab fa-pinterest text-white text-xl hover:text-lGreen transition duration-100 ease-in"
+                    ></i
+                  ></a>
                 </li>
                 <li>
-                  <i
-                    class="fab fa-instagram text-white text-xl hover:text-lGreen transition duration-100 ease-in"
-                  ></i>
+                  <a href="#">
+                    <i
+                      class="fab fa-instagram text-white text-xl hover:text-lGreen transition duration-100 ease-in"
+                    ></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -473,41 +482,53 @@
             <ul
               class="flex flex-col capitalize whitespace-nowrap text-center xl:text-left text-white font-thin text-base gap-3 mt-10 xl:mt-0"
             >
-              <a
-                href="#"
-                class="hover:text-lGreen transition duration-100 ease-in"
-                >about us</a
-              >
-              <a
-                href="#"
-                class="hover:text-lGreen transition duration-100 ease-in"
-                >contact</a
-              >
-              <a
-                href="#"
-                class="hover:text-lGreen transition duration-100 ease-in"
-                >blog</a
-              >
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-lGreen transition duration-100 ease-in"
+                  >about us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-lGreen transition duration-100 ease-in"
+                  >contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-lGreen transition duration-100 ease-in"
+                  >blog</a
+                >
+              </li>
             </ul>
-            <div
+            <ul
               class="flex flex-col mt-3 xl:mt-0 whitespace-nowrap capitalize text-center xl:text-left text-white font-thin text-base gap-3"
             >
-              <a
-                href="#"
-                class="hover:text-lGreen transition duration-100 ease-in"
-                >carrers</a
-              >
-              <a
-                href="#"
-                class="hover:text-lGreen transition duration-100 ease-in"
-                >support</a
-              >
-              <a
-                href="#"
-                class="hover:text-lGreen transition duration-100 ease-in"
-                >privacy policy</a
-              >
-            </div>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-lGreen transition duration-100 ease-in"
+                  >carrers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-lGreen transition duration-100 ease-in"
+                  >support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-lGreen transition duration-100 ease-in"
+                  >privacy policy</a
+                >
+              </li>
+            </ul>
           </div>
 
           <div
@@ -515,7 +536,7 @@
           >
             <a
               href="#"
-              class="text-white capitalize ml-0 xl:ml-auto mb-4 hover:opacity-60 transition duration-100 ease-in rounded-full px-6 py-3 bg-gradient-to-l from-lGreen to-bCyan items-baseline"
+              class="text-white capitalize ml-0 xl:ml-auto mb-4 hover:opacity-60 transition duration-100 ease-in rounded-full px-6 py-3 bg-gradient-to-l from-bCyan to-lGreen items-baseline"
               >request invite</a
             >
 
