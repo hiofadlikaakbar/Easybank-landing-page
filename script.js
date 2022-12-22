@@ -1,10 +1,3 @@
-// const burgerMenu = document.querySelector("#burger-menu");
-// const menu = document.querySelector("#menu");
-// burgerMenu.addEventListener("click", () => {
-//   menu.classList.toggle("flex");
-//   menu.classList.toggle("hidden");
-// });
-
 const burger = document.querySelector("#burger-menu");
 const menu = document.querySelector("#menu");
 const burgerIcon = document.querySelector("#burger-icon");
